@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .container , .navbar , .sidebar , .adver , .pin , .foot{
+            background-color: rgb(219, 103, 103);
+            border-radius: 5px;
+            margin: 20pxp;
+        
+            
+        }
+
+        .container{
+            grid-area: container; 
+        }
+        .navbar{
+            grid-area: navbar;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .adver {
+            grid-area: adver;
+        }
+        .pin{
+            grid-area: pin;
+        }
+        .foot{
+            grid-area: foot;
+        }
+        .bod{
+            display: grid;
+            grid-template-areas: 
+            "container container container container"
+            "navbar    pin       pin       sidebar"
+            "navbar    pin       pin       adver"
+            "foot    foot    foot    foot"
+            ;
+        }
+
+
+
+
+       
+    </style>
+</head>
+<body class="bod">
+    <header>
+        <div class="container">
+            <H2>The Header</H2>
+        </div>
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="">nav-1</a>
+            <a href="">nav-2</a>
+            <a href="">nav-3</a>
+        </div>
+    </nav>
+    <aside>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+        </div>
+        <div class="adver">
+            <h3>Advertisement</h3>
+        </div>
+    </aside>
+    <main>
+        <div class="pin">
+            <H1>the main body 1</H1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo repellat corporis ipsa veritatis at, quod cupiditate repudiandae, ad magni quaerat fugit distinctio itaque deserunt aperiam pariatur facere, aliquam doloribus totam voluptatibus natus praesentium alias officia dolorem! Quo, iure ipsum. Itaque asperiores est blanditiis. Ea illum odio asperiores ipsam, alias unde?</p>
+            <H1>the main body 2</H1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum unde commodi, tenetur excepturi repellat tempora, voluptatum, sed quasi iste consectetur nam nobis? Autem rem, aut architecto aliquid tempora, nemo adipisci quis neque temporibus voluptas deserunt rerum, vitae pariatur quasi maxime. Aliquid culpa magni quam ipsum, nostrum voluptatem itaque vel maxime corporis quia iusto sunt ad veritatis recusandae amet consequuntur autem?
+           
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <h2>The Footer</h2>
+        </div>
+    </footer>
+</body>
+</html>
